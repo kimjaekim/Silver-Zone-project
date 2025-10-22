@@ -1,0 +1,20 @@
+bus_stop, 0.0, 0.0, 7.0
+car_out_density, 0.0, 0.0, 4.0
+cctv_car, 0.8400386984768254, 0.0, 1.0
+cctv_child, -0.22817920479803644, 0.0, 1.0
+hospital_log, 0.17383423215173383, 0.0, 3.761200189590454
+intersection_fourway, 0.68781395136553, 0.0, 2.0
+intersection_single, 2.714740244275179, 0.0, 5.0
+intersection_threeway, -1.6900360452002696, 0.0, 3.0
+led_density, 0.25422081499291643, 0.0, 2.0
+market_kde_density_log_weighted, 1.0928190164717804, 3.6043044561154247E-20, 1.7573840603232749E-12
+senior_facility, 0.7733137771658045, 0.0, 5.0
+silverzone, 0.0, 0.0, 1.0
+streetlight, -6.466176794802862, 0.0, 56.0
+`car_out_density, -0.6287283426230756, 0.0, 0.5
+`market_kde_density_log_weighted, -0.9206484473145888, 3.6043044561154247E-20, 2.8557481357958936E-13
+'bus_stop, -1.9285864250730091, 1.5, 7.0
+linearPredictorNormalizer, 2.468480747162689
+densityNormalizer, 27.8482808451796
+numBackgroundPoints, 400
+entropy, 5.4156026652872375
