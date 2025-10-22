@@ -1,0 +1,16 @@
+Predictor variable,Categorical,Sample average
+bus_stop,false,1.4181818181818182
+car_out_density,false,0.4
+cctv_car,false,0.3090909090909091
+cctv_way_density,false,0.509090909090909
+crosswalk,false,1.981818181818182
+hospital_log,false,1.1792992310090498
+intersection_fourway,false,0.32727272727272727
+intersection_single,false,1.0909090909090908
+intersection_threeway,false,0.12727272727272726
+led_density,false,0.2545454545454545
+market_kde_density_log_weighted,false,4.629087973164555E-13
+senior_facility,false,0.32727272727272727
+silverzone,false,0.09090909090909091
+streetlight,false,0.0
+walklight,false,4.381818181818182
