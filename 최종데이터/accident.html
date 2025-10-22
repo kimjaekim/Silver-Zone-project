@@ -1,0 +1,54 @@
+<title>Replicated maxent model for accident</title>
+<CENTER><H1>Replicated maxent model for accident</H1></CENTER>
+<br> This page summarizes the results of 30 bootstrap models for accident, created Fri Apr 18 14:22:02 KST 2025 using Maxent version 3.4.4.  The individual models are here: <a href = "accident_0.html">[0]</a> <a href = "accident_1.html">[1]</a> <a href = "accident_2.html">[2]</a> <a href = "accident_3.html">[3]</a> <a href = "accident_4.html">[4]</a> <a href = "accident_5.html">[5]</a> <a href = "accident_6.html">[6]</a> <a href = "accident_7.html">[7]</a> <a href = "accident_8.html">[8]</a> <a href = "accident_9.html">[9]</a> <a href = "accident_10.html">[10]</a> <a href = "accident_11.html">[11]</a> <a href = "accident_12.html">[12]</a> <a href = "accident_13.html">[13]</a> <a href = "accident_14.html">[14]</a> <a href = "accident_15.html">[15]</a> <a href = "accident_16.html">[16]</a> <a href = "accident_17.html">[17]</a> <a href = "accident_18.html">[18]</a> <a href = "accident_19.html">[19]</a> <a href = "accident_20.html">[20]</a> <a href = "accident_21.html">[21]</a> <a href = "accident_22.html">[22]</a> <a href = "accident_23.html">[23]</a> <a href = "accident_24.html">[24]</a> <a href = "accident_25.html">[25]</a> <a href = "accident_26.html">[26]</a> <a href = "accident_27.html">[27]</a> <a href = "accident_28.html">[28]</a> <a href = "accident_29.html">[29]</a><br>
+<br><HR><H2>Analysis of omission/commission</H2>
+The following picture shows the training omission rate and predicted area as a function of the cumulative threshold, averaged over the replicate runs.
+<br><img src="plots\accident_omission.png"><br>
+<br> The next picture is the receiver operating characteristic (ROC) curve for the same data, again averaged over the replicate runs.  Note that the specificity is defined using predicted area, rather than true commission (see the paper by Phillips, Anderson and Schapire cited on the help page for discussion of what this means).  The average training AUC for the replicate runs is 0.828, and the standard deviation is 0.026.
+<br><img src="plots\accident_roc.png"><br>
+<br><HR><H2>Pictures of the model</H2>
+The following two pictures show the point-wise mean and standard deviation of the 30 output grids.  Other available summary grids are <a href = "plots/accident_min.png">min</a>, <a href = "plots/accident_max.png">max</a>, <a href = "plots/accident_median.png">median</a> and 95% confidence level (<a href = "plots/accident_lowerci.png">lowerci</a>).<br><br>
+<a href = "plots/accident_avg.png"> <img src="plots/accident_avg.png" width=600></a>
+<a href = "plots/accident_stddev.png"> <img src="plots/accident_stddev.png" width=600></a>
+<br>
+<br><HR><H2>Response curves</H2>
+<br>These curves show how each environmental variable affects the Maxent prediction.
+The 
+curves show how the predicted probability of presence changes as each environmental variable is varied, keeping all other environmental variables at their average sample value. Click on a response curve to see a larger version.  Note that the curves can be hard to interpret if you have strongly correlated variables, as the model may depend on the correlations in ways that are not evident in the curves.  In other words, the curves show the marginal effect of changing exactly one variable, whereas the model may take advantage of sets of variables changing together.  The curves show the mean response of the 30 replicate Maxent runs (red) and and the mean +/- one standard deviation (blue, two shades for categorical variables).<br><br>
+<a href = "plots/accident_bus_stop.png"> <img src="plots/accident_bus_stop_thumb.png"></a>
+<a href = "plots/accident_car_out_density.png"> <img src="plots/accident_car_out_density_thumb.png"></a>
+<a href = "plots/accident_cctv_car.png"> <img src="plots/accident_cctv_car_thumb.png"></a>
+<a href = "plots/accident_cctv_way_density.png"> <img src="plots/accident_cctv_way_density_thumb.png"></a>
+<a href = "plots/accident_crosswalk.png"> <img src="plots/accident_crosswalk_thumb.png"></a>
+<a href = "plots/accident_hospital_log.png"> <img src="plots/accident_hospital_log_thumb.png"></a>
+<a href = "plots/accident_intersection_fourway.png"> <img src="plots/accident_intersection_fourway_thumb.png"></a>
+<a href = "plots/accident_intersection_single.png"> <img src="plots/accident_intersection_single_thumb.png"></a>
+<a href = "plots/accident_intersection_threeway.png"> <img src="plots/accident_intersection_threeway_thumb.png"></a>
+<a href = "plots/accident_led_density.png"> <img src="plots/accident_led_density_thumb.png"></a>
+<a href = "plots/accident_market_kde_density_log_weighted.png"> <img src="plots/accident_market_kde_density_log_weighted_thumb.png"></a>
+<a href = "plots/accident_senior_facility.png"> <img src="plots/accident_senior_facility_thumb.png"></a>
+<a href = "plots/accident_silverzone.png"> <img src="plots/accident_silverzone_thumb.png"></a>
+<a href = "plots/accident_streetlight.png"> <img src="plots/accident_streetlight_thumb.png"></a>
+<a href = "plots/accident_walklight.png"> <img src="plots/accident_walklight_thumb.png"></a>
+<br><br>In contrast to the above marginal response curves, each of the following curves represents a different model, namely, a Maxent model created using only the corresponding variable.  These plots reflect the dependence of predicted suitability both on the selected variable and on dependencies induced by correlations between the selected variable and other variables.  They may be easier to interpret if there are strong correlations between variables.<br><br>
+<a href = "plots/accident_bus_stop_only.png"> <img src="plots/accident_bus_stop_only_thumb.png"></a>
+<a href = "plots/accident_car_out_density_only.png"> <img src="plots/accident_car_out_density_only_thumb.png"></a>
+<a href = "plots/accident_cctv_car_only.png"> <img src="plots/accident_cctv_car_only_thumb.png"></a>
+<a href = "plots/accident_cctv_way_density_only.png"> <img src="plots/accident_cctv_way_density_only_thumb.png"></a>
+<a href = "plots/accident_crosswalk_only.png"> <img src="plots/accident_crosswalk_only_thumb.png"></a>
+<a href = "plots/accident_hospital_log_only.png"> <img src="plots/accident_hospital_log_only_thumb.png"></a>
+<a href = "plots/accident_intersection_fourway_only.png"> <img src="plots/accident_intersection_fourway_only_thumb.png"></a>
+<a href = "plots/accident_intersection_single_only.png"> <img src="plots/accident_intersection_single_only_thumb.png"></a>
+<a href = "plots/accident_intersection_threeway_only.png"> <img src="plots/accident_intersection_threeway_only_thumb.png"></a>
+<a href = "plots/accident_led_density_only.png"> <img src="plots/accident_led_density_only_thumb.png"></a>
+<a href = "plots/accident_market_kde_density_log_weighted_only.png"> <img src="plots/accident_market_kde_density_log_weighted_only_thumb.png"></a>
+<a href = "plots/accident_senior_facility_only.png"> <img src="plots/accident_senior_facility_only_thumb.png"></a>
+<a href = "plots/accident_silverzone_only.png"> <img src="plots/accident_silverzone_only_thumb.png"></a>
+<a href = "plots/accident_streetlight_only.png"> <img src="plots/accident_streetlight_only_thumb.png"></a>
+<a href = "plots/accident_walklight_only.png"> <img src="plots/accident_walklight_only_thumb.png"></a>
+<br><HR><H2>Analysis of variable contributions</H2><br>
+The following table gives estimates of relative contributions of the environmental variables to the Maxent model.  To determine the first estimate, in each iteration of the training algorithm, the increase in regularized gain is added to the contribution of the corresponding variable, or subtracted from it if the change to the absolute value of lambda is negative.  For the second estimate, for each environmental variable in turn, the values of that variable on training presence and background data are randomly permuted.  The model is reevaluated on the permuted data, and the resulting drop in training AUC is shown in the table, normalized to percentages.  As with the variable jackknife, variable contributions should be interpreted with caution when the predictor variables are correlated.  Values shown are averages over replicate runs.<br>
+<br><table border cols=3><tr><th>Variable</th><th>Percent contribution</th><th>Permutation importance</th><tr align=right><td>market_kde_density_log_weighted</td><td>23.4</td><td>26.5</td></tr><tr align=right><td>hospital_log</td><td>18.6</td><td>12.3</td></tr><tr align=right><td>walklight</td><td>12.1</td><td>11.8</td></tr><tr align=right><td>senior_facility</td><td>6.6</td><td>7.5</td></tr><tr align=right><td>silverzone</td><td>6.3</td><td>4.1</td></tr><tr align=right><td>car_out_density</td><td>5.4</td><td>2.3</td></tr><tr align=right><td>bus_stop</td><td>5.3</td><td>4.6</td></tr><tr align=right><td>streetlight</td><td>5.1</td><td>3.6</td></tr><tr align=right><td>cctv_car</td><td>4.2</td><td>8.4</td></tr><tr align=right><td>intersection_fourway</td><td>3.7</td><td>3.4</td></tr><tr align=right><td>intersection_single</td><td>3</td><td>6.6</td></tr><tr align=right><td>crosswalk</td><td>2</td><td>2.9</td></tr><tr align=right><td>intersection_threeway</td><td>1.9</td><td>2.1</td></tr><tr align=right><td>led_density</td><td>1.5</td><td>1.9</td></tr><tr align=right><td>cctv_way_density</td><td>1</td><td>2.1</td></tr></table><br><br>
+The following picture shows the results of the jackknife test of variable importance.  The environmental variable with highest gain when used in isolation is hospital_log, which therefore appears to have the most useful information by itself.  The environmental variable that decreases the gain the most when it is omitted is market_kde_density_log_weighted, which therefore appears to have the most information that isn't present in the other variables.  Values shown are averages over replicate runs.<br>
+<br><img src="plots\accident_jacknife.png"><br>
+<br><HR><br>Command line to repeat this species model: java density.MaxEnt nowarnings noprefixes -E "" -E accident responsecurves jackknife "outputdirectory=C:\Users\윤홍식\Desktop\동대문구 공모전\재현이 실수해서 다시한거" "samplesfile=C:\Users\윤홍식\Desktop\동대문구 공모전\종속변수\accident_occurrence_epsg5186.csv" "environmentallayers=C:\Users\윤홍식\Desktop\동대문구 공모전\환경변수" randomseed betamultiplier=2.0 maximumbackground=5000 replicates=30 replicatetype=bootstrap noquadratic noproduct<br>
